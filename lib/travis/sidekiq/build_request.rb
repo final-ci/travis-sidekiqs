@@ -26,7 +26,14 @@ module Travis
       end
 
       def params
-        { payload: payload, event_type: type, token: credentials['token'], github_guid: github_guid }
+        {
+          payload: payload,
+          event_type: type,
+          token: credentials['token'],
+          github_guid: github_guid,
+          provider: data['provider'],
+          jid: jid
+        }
       end
 
       def type
