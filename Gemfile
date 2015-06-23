@@ -4,9 +4,12 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'sprockets', '~> 2.2.1'
-gem 'travis-core', github: 'travis-ci/travis-core'
-gem 'travis-support', github: 'travis-ci/travis-support'
-gem "sentry-raven", github: "getsentry/raven-ruby"
+gem 'travis-core',     github: 'final-ci/travis-core'
+#gem 'travis-core',      path: '../travis-core'
+gem 'travis-support',   github: 'final-ci/travis-support'
+#gem 'travis-support',   path: '../travis-support'
+
+gem "sentry-raven",     github: "getsentry/raven-ruby"
 gem 'multi_json'
 
 group :test do
