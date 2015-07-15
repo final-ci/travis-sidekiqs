@@ -31,7 +31,7 @@ module Travis
           event_type: type,
           token: credentials['token'],
           github_guid: github_guid,
-          provider: data['provider'],
+          provider: payload['provider'],
           jid: jid
         }
       end

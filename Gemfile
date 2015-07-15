@@ -19,3 +19,7 @@ group :test do
   gem 'rb-fsevent'
   gem 'mocha'
 end
+
+#TODO should be in travis-core.gemspec?
+gem 'stash-client',       github: 'final-ci/stash-client'
+gem 'sidekiq-status',     github: 'utgarda/sidekiq-status', ref: 'e77d5dc2ea0a249ccbbafead21ece59d6b8caf73', require: nil
